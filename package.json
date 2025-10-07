@@ -30,5 +30,8 @@
   },
   "optionalDependencies": {
     "@next/swc-win32-x64-msvc": "^15.5.4"
+  },
+  "build": {
+    "outputDirectory": ".vercel/output"
   }
 }
