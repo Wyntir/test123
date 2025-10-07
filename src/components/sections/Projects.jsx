@@ -12,7 +12,7 @@ const projectsData = [
   id: 1,
   number: '01',
   title: 'Kimono Accessory Store',
-  description: 'Digital marketing and e-commerce for patented, handcrafted kimono accessories with a focus on cultural heritage.',
+  description: 'TabibitoTree.com Digital marketing and e-commerce for patented, handcrafted kimono accessories with a focus on cultural heritage.',
   tags: ['Digital Marketing', 'Patented Designs', 'Handcrafting'],
   gradient: 'linear-gradient(135deg, #f43f5e 0%, #ec4899 100%)',
   image: '/images/project1.jpg'
