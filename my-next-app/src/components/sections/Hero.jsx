@@ -36,16 +36,15 @@ const Hero = () => {
           animate="visible"
         >
           <motion.span variants={itemVariants} className={styles.subtitle}>
-            Agency Things • Year 2025
+            Portfolio • Year 2025
           </motion.span>
           
           <motion.h1 variants={itemVariants}>
-            Creative <GradientText>Digital</GradientText> Agency
+            Mirai Cho
           </motion.h1>
           
           <motion.p variants={itemVariants}>
-            European design & innovation agency pioneering in IoT experience for humans. 
-            We craft digital experiences that push boundaries and create meaningful connections.
+            Upcoming Software Engineer
           </motion.p>
           
           <motion.div variants={itemVariants}>

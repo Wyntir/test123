@@ -5,8 +5,8 @@ import Footer from '@/components/layout/Footer'
 import AnimatedBackground from '@/components/layout/AnimatedBackground'
 
 export const metadata = {
-  title: 'Portfolio - Digital Agency',
-  description: 'European design & innovation agency pioneering in IoT experience',
+  title: 'Portfolio - Mirai Cho',
+  description: 'Upcoming Software Engineer',
 }
 
 export default function RootLayout({ children }) {

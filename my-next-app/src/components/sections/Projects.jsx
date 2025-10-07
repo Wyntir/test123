@@ -8,33 +8,34 @@ import GradientText from '@/components/ui/GradientText'
 import styles from './Projects.module.css'
 
 const projectsData = [
-  {
-    id: 1,
-    number: '01',
-    title: 'Smart Home IoT Platform',
-    description: 'Revolutionary IoT ecosystem connecting homes with intelligent automation and seamless user experience.',
-    tags: ['React', 'Node.js', 'IoT'],
-    gradient: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
-    image: '/images/project1.jpg'
-  },
-  {
-    id: 2,
-    number: '02',
-    title: 'AI-Powered Analytics',
-    description: 'Machine learning dashboard providing real-time insights and predictive analytics for enterprise clients.',
-    tags: ['Python', 'TensorFlow', 'Next.js'],
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    image: '/images/project2.jpg'
-  },
-  {
-    id: 3,
-    number: '03',
-    title: 'E-Commerce Revolution',
-    description: 'Next-generation shopping experience with AR integration and personalized recommendations.',
-    tags: ['Vue.js', 'WebXR', 'GraphQL'],
-    gradient: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
-    image: '/images/project3.jpg'
-  }
+{
+  id: 1,
+  number: '01',
+  title: 'Kimono Accessory Store',
+  description: 'Digital marketing and e-commerce for patented, handcrafted kimono accessories with a focus on cultural heritage.',
+  tags: ['Digital Marketing', 'Patented Designs', 'Handcrafting'],
+  gradient: 'linear-gradient(135deg, #f43f5e 0%, #ec4899 100%)',
+  image: '/images/project1.jpg'
+},
+{
+  id: 2,
+  number: '02',
+  title: 'ASB Auto Group',
+  description: 'ASBAutoGroup.com Auto sales and vehicle repair which made 19k in revenue over the last quarter',
+  tags: ['Auto Sales', 'Vehicle Repair', 'Simple Sales'],
+  gradient: 'linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)',
+  image: '/images/project2.jpg'
+},
+{
+  id: 3,
+  number: '03',
+  title: 'Koala Site',
+  description: 'A fun and educational website all about koalas, built with HTML and CSS, hosted using Cloudflare Pages.',
+  tags: ['HTML', 'CSS', 'Cloudflare'],
+  gradient: 'linear-gradient(135deg, #22c55e 0%, #10b981 100%)',
+  image: '/images/project3.jpg'
+}
+
 ]
 
 const Projects = () => {
@@ -61,8 +62,8 @@ const Projects = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <h2>Featured <GradientText>Projects</GradientText></h2>
-        <p>Innovative solutions that define tomorrow's digital landscape</p>
+        <h2>Featured Projects</h2>
+        <p>Some of my more interesting projects</p>
       </motion.div>
 
       <motion.div 
