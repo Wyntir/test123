@@ -1,0 +1,119 @@
+﻿.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 60px 60px;
+  position: relative;
+}
+
+.heroContent {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.heroText {
+  animation: slideInLeft 1s ease-out;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.heroText h1 {
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 700;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.heroText p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.heroVisual {
+  position: relative;
+  animation: slideInRight 1s ease-out;
+  height: 500px;
+}
+
+.mainCardContent {
+  font-size: 120px;
+  color: white;
+  opacity: 0.8;
+}
+
+.smallCardContent {
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.smallCardContent div:first-child {
+  margin-bottom: 10px;
+}
+
+.year {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mediumCardContent .number {
+  color: var(--accent-purple);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.mediumCardContent .label {
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px 60px;
+  }
+  
+  .heroContent {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .heroVisual {
+    display: none;
+  }
+}
