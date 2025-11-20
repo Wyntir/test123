@@ -47,7 +47,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-zinc-50 via-white to-zinc-50 dark:from-zinc-950 dark:via-black dark:to-zinc-950">
+    <div className="min-h-screen" style={{ background: '#c4e2f5' }}>
       <FloatingNav />
 
       {/* Hero Section */}
@@ -294,7 +294,8 @@ export default function Home() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="border-t border-zinc-200 bg-white px-6 py-12 dark:border-zinc-800 dark:bg-black"
+        style={{ background: '#c4e2f5' }}
+        className="border-t border-zinc-200 px-6 py-12"
       >
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
