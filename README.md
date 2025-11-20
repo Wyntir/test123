@@ -1,36 +1,159 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mirai Cho - Portfolio
 
-## Getting Started
+A modern, high-performance portfolio website built with Next.js 14+, TypeScript, and Tailwind CSS. Optimized for 100/100 performance scores and deployed on Cloudflare Pages.
 
-First, run the development server:
+## 🚀 Features
 
+- ⚡ Next.js 16 with App Router
+- 💎 TypeScript for type safety
+- 🎨 Tailwind CSS 4 for styling
+- 🌓 Dark mode support
+- 📱 Fully responsive design
+- ♿ Accessibility optimized
+- 🚀 Optimized for Cloudflare Pages
+- 🎯 100/100 Performance Score ready
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **Fonts:** Geist Sans & Geist Mono
+- **Deployment:** Cloudflare Pages
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd Portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 🏗️ Building for Production
 
-To learn more about Next.js, take a look at the following resources:
+### Standard Build
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Deployment to Cloudflare Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Option 1: Connect GitHub Repository (Recommended)
 
-## Deploy on Vercel
+1. Push your code to GitHub
+2. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com/)
+3. Go to **Pages** > **Create a project**
+4. Connect your GitHub repository
+5. Configure build settings:
+   - **Build command:** `npm run build`
+   - **Build output directory:** `out`
+   - **Root directory:** `/`
+   - **Node version:** `20` or later
+6. Click **Save and Deploy**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Option 2: Direct Upload via Wrangler
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Install Wrangler (Cloudflare CLI):
+```bash
+npm install -g wrangler
+```
+
+2. Build the project:
+```bash
+npm run build
+```
+
+3. Login to Cloudflare:
+```bash
+wrangler login
+```
+
+4. Deploy:
+```bash
+wrangler pages deploy out --project-name=mirai-cho-portfolio
+```
+
+## 📝 Configuration
+
+### Environment Variables
+
+Create a `.env.local` file for local development:
+
+```env
+# Add your environment variables here
+NEXT_PUBLIC_SITE_URL=https://miraicho.com
+```
+
+### Customization
+
+- **Content:** Edit `src/app/page.tsx` to update portfolio content
+- **Styles:** Modify `src/app/globals.css` for global styles
+- **Metadata:** Update `src/app/layout.tsx` for SEO settings
+- **Projects:** Update the projects array in `page.tsx`
+
+## 🎨 Customization Guide
+
+### Update Personal Information
+
+1. **Name & Bio:** Edit the hero section in `src/app/page.tsx`
+2. **Skills:** Modify the skills array in the About section
+3. **Projects:** Update the projects array with your actual projects
+4. **Contact:** Update email and social media links
+
+### Add New Sections
+
+Create new sections by adding them to `page.tsx`:
+
+```tsx
+<section className="relative px-6 py-20 sm:py-32">
+  {/* Your new section content */}
+</section>
+```
+
+## 📊 Performance Optimization
+
+This portfolio is optimized for maximum performance:
+
+- ✅ Static site generation (SSG)
+- ✅ Optimized images
+- ✅ CSS optimized with Tailwind
+- ✅ Minimal JavaScript bundle
+- ✅ Semantic HTML
+- ✅ Accessibility best practices
+- ✅ Smooth scroll behavior
+- ✅ Reduced motion support
+
+## 🔧 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production (static export)
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📄 License
+
+MIT License - feel free to use this template for your own portfolio!
+
+## 💬 Contact
+
+- **Email:** hello@miraicho.com
+- **GitHub:** [Your GitHub]
+- **LinkedIn:** [Your LinkedIn]
+- **Twitter:** [Your Twitter]
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
